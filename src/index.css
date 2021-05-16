@@ -93,6 +93,7 @@ footer {
 }
 .product img {
   max-width: 37rem;
+  box-shadow: 2rem #203040;
   max-height: 37rem;
 }
 .product-price {
@@ -108,6 +109,7 @@ footer {
 .product-price div {
   font-size: 2rem;
 }
+
 .button {
   padding: 1rem;
   border: 0.1rem #c0c0c0 solid;

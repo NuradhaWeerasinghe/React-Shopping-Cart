@@ -2,7 +2,7 @@
     "products": [
       {
         "_id": "order1",
-        "image": "/images/dress1.jpg",
+        "image": "/images/order1.jpg",
         "title": "Chicken Kothtu",
         "description": "Delicious Rotti koththu servered with roast chicken",
         "category": "Mains",
@@ -10,7 +10,7 @@
       },
       {
         "_id": "order2",
-        "image": "/images/dress1.jpg",
+        "image": "/images/order2.jpg",
         "title": "Fried rice",
         "description": "Fried Basmathi rice with fresh vegitables and creamy chicken curry",
         "category": "Mains",
@@ -18,7 +18,7 @@
       },
       {
         "_id": "order3",
-        "image": "/images/dress1.jpg",
+        "image": "/images/order3.jpg",
         "title": "Mixed Rice",
         "description": "Special mixed rice with juicy sesfoods and chicken. Served with spicy hot sauce.",
         "category": "Mains",
@@ -26,7 +26,7 @@
       },
       {
         "_id": "order4",
-        "image": "/images/dress1.jpg",
+        "image": "/images/order4.jpg",
         "title": "String Hoppers",
         "description": "Tasty String hoppers server with Delicious curries and sambol",
         "category": "Mains",
@@ -34,7 +34,7 @@
       },
       {
         "_id": "order5",
-        "image": "/images/dress1.jpg",
+        "image": "/images/order5.jpg",
         "title": "Hoppers",
         "description": "Crispy hoppers served with spicy sambol and creamy gravy",
         "category": "Mains",
@@ -42,10 +42,10 @@
       },
       {
         "_id": "order6",
-        "image": "/images/dress1.jpg",
+        "image": "/images/order6.jpg",
         "title": "Mango shake",
         "description": "Delicios mango shake filled with fresh mango and ice cream",
-        "category": "Bevarages",
+        "category": "Beverages",
         "price": 250
       }
     ]
