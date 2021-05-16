@@ -189,7 +189,7 @@ form {
   flex-direction: column;
   padding: 1rem;
 }
-input {
+input ,select{
   padding: 1rem;
   border: 0.1rem #c0c0c0 solid;
 }

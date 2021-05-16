@@ -5,18 +5,26 @@ import Products from "./components/Products";
 import data from "./data.json"
 
 class App extends React.Component{
-  constructor(){
-    super();  
+  constructor() {
+    super();
     this.state = {
-      products : data.products,
-      cartItems : [],
+      products: data.products,
+      cartItems: localStorage.getItem("cartItems")
+        ? JSON.parse(localStorage.getItem("cartItems"))
+        : [],
       size: "",
       sort: "",
     };
   }
 
+  // Create order
+  createOrder = (order)=> {
+    alert("Need to sae order for" + order.PaymentMethod,
+    );
+  }
+
   // Add to cart function
-   addToCart =(product) =>{
+  addToCart = (product) => {
     const cartItems = this.state.cartItems.slice();
     let alreadyInCart = false;
     cartItems.forEach((item) => {
@@ -29,7 +37,8 @@ class App extends React.Component{
       cartItems.push({ ...product, count: 1 });
     }
     this.setState({ cartItems });
-   }
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  };
 
    // Remove from cart function 
    removeFromCart = (product) => {
@@ -37,6 +46,10 @@ class App extends React.Component{
     this.setState({
       cartItems: cartItems.filter((x) => x._id !== product._id),
     });
+    localStorage.setItem(
+      "cartItems",
+      JSON.stringify(cartItems.filter((x) => x._id !== product._id))
+    );
   };
 
   // Sort product function 
@@ -105,6 +118,7 @@ class App extends React.Component{
               <Cart
                 cartItems={this.state.cartItems}
                 removeFromCart={this.removeFromCart}
+                createOrder={this.createOrder}
               />
             </div>
           </div>
